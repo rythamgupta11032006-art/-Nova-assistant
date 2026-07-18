@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Assistant</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app" id="app">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark" id="brandMark">N</div>
+        <div class="brand-text">
+          <div class="brand-name" id="brandName">Nova</div>
+          <div class="brand-tagline" id="brandTagline">Your personal assistant</div>
+        </div>
+      </div>
+
+      <button class="new-chat-btn" id="newChatBtn">+ New chat</button>
+
+      <div class="panel">
+        <div class="panel-header">
+          <span>Tasks</span>
+          <span class="panel-count" id="taskCount">0</span>
+        </div>
+        <form id="taskForm" class="quick-add">
+          <input type="text" id="taskInput" placeholder="Add a task…" autocomplete="off" />
+        </form>
+        <ul class="task-list" id="taskList"></ul>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <span>Notes</span>
+          <span class="panel-count" id="noteCount">0</span>
+        </div>
+        <form id="noteForm" class="quick-add">
+          <input type="text" id="noteInput" placeholder="Add a note…" autocomplete="off" />
+        </form>
+        <ul class="note-list" id="noteList"></ul>
+      </div>
+    </aside>
+
+    <main class="chat">
+      <div class="chat-messages" id="chatMessages"></div>
+
+      <form class="chat-input-row" id="chatForm">
+        <input type="text" id="chatInput" placeholder="Message your assistant…" autocomplete="off" />
+        <button type="submit" id="sendBtn">Send</button>
+      </form>
+    </main>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
