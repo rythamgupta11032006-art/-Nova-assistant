@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const PORT = process.env.PORT || 3000;
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
-const MODEL = process.env.MODEL || 'claude-sonnet-4-5';
+const MODEL = process.env.MODEL || 'claude-sonnet-5';
 
 function loadBranding() {
   const raw = fs.readFileSync(path.join(__dirname, 'config', 'branding.json'), 'utf-8');
